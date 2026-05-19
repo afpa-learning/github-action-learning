@@ -5,9 +5,18 @@ jobs:
   Github-action-learning:
     runs-on: ubuntu-latest
     steps:
-      - name: Step nommée
+      - name: Etape 1
         run: echo "It's alive! ALIIIIIVE!"
 
       - run: echo "Le job a été déclenché par ${{ github.event_name }}"
       - run: echo "Ce job tourne sur ${{ runner.os }} ${{ runner.os }} ${{ runner.os }} "
       - run: echo "La branche est ${{ github.ref }} sur le dépôt ${{ github.repository }}"
+
+      - name: Récupération du code
+        uses : actions/checkout@v5
+
+      - run: echo "Le dépôt ${{ github.repository }} a été cloné dans le runner."
+      
+      - name: Liste des fichiers du dépôt
+        run : ls ${{ github.workspace }}
+
