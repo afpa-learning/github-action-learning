@@ -2,11 +2,19 @@
 
 Dépôt d'entraînement à la création de workflow Github Action.
 
+Cette procédure peut être suivie avec l'utilisation d'un projet tel que :
+- [projet Web Python](https://github.com/ludovic-esperce/taxi-fare/tree/solution)
+
+> [!WARNING]
+> Attention de bien réupérer le code complet du projet disponible sur la branche `solution`.
+
+---
+
 ## Etape 1 : création d'un workflow
 
 La procédure suivante permet de créer un premier workflow :
 1. créer projet local avec un dossier `.github/workflows`
-2. créer un fichier `firt-workflow.yml` dans ce dossier, avec le contenu suivant :
+2. créer un fichier `ci.yml` dans ce dossier, avec le contenu suivant :
 ```yml
 name : Github Action learning
 
@@ -40,6 +48,8 @@ Cycle de vie d'un Workflow :
 4. attribution d'un "runner"
 5. exécution des jobs
 6. nettoyage des machines virtuelles
+
+---
 
 ## Etape 2 : scripting sur le runner
 
